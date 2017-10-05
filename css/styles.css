@@ -1,0 +1,383 @@
+/* Your styles here */
+@font-face {
+    font-family: MyriadPro;
+    src: url(../fonts/MyriadPro-Regular.otf);
+}
+
+@font-face {
+    font-family: "MuseoSansRegular";
+    src: url("../fonts/MuseoSansRegular.eot");
+    src: url("../fonts/MuseoSansRegular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/MuseoSansRegular.woff") format("woff"),
+    url("../fonts/MuseoSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: AvenirBook;
+    src: url(../fonts/AvenirLTStd-Book.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'AvenirBook', sans-serif;
+    font-size: 25px;
+}
+
+.sign, nav {
+    float: right;
+
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+
+}
+
+.container:not(.header-container){
+    padding: 0 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #74787f;
+
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom:10px;
+}
+
+h2 {
+    font-size: 0.74em;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.sign a {
+    display: inline-block;
+    background: #0ebfdd;
+    padding: 10px 35px;
+    line-height: normal;
+    border-radius: 36px;
+    color: white;
+    font-family: 'MuseoSansRegular', sans-serif;
+}
+
+nav, nav a {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    line-height: 55px;
+
+}
+
+nav a {
+    border-top: 1px solid #74787f;
+    background: white;
+}
+
+nav a,.sign a{
+    font-size: 0.5em;
+}
+
+
+header {
+    vertical-align: middle;
+    line-height: 80px;
+    height: 80px;
+    width: 100%;
+    overflow: visible;
+    display: table;
+}
+
+.logo {
+margin-left: 10px;
+    width: 100px;
+    height: 40px;
+    line-height: 80px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("../img/epam.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+
+.mission {
+    height: 600px;
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+    width: 100%;
+}
+
+.mission .container {
+    color: #fff;
+    height: 600px;
+    display: table;
+}
+
+ span {
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+
+}
+.mission span{    padding: 70px 0;}
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.co-worker{padding: 10px 35px}
+
+.co-worker p{
+
+    text-align: center;
+    line-height: 20px;
+}
+.position{
+   font-style: italic;
+    font-size:0.54em;
+}
+.team {
+    background: #0ebfdd;
+    padding:1px 0;
+    color: white;
+}
+
+.button {
+    display: block;
+    width: 200px;
+    margin: 50px auto;
+    border: 1px solid white;
+    text-align: center;
+    padding: 13px 16px;
+    border-radius: 35px;
+    font-size: 0.7em;
+}
+
+.newsletter {
+    background: #f9f5e9;
+    padding: 10px 0;
+}
+
+.about {
+    padding: 40px 0 60px;
+}
+
+.about h1, .newsletter h1 {
+    color: #0ebfdd;
+}
+
+
+
+input {
+    outline: none;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    display: block;
+    margin: 60px auto;
+    width: 180px;
+    height: 45px;
+    background-image: url("../img/envelope.png");
+    background-size: 25px 20px;
+    background-position: 140px center;
+    background-repeat: no-repeat;
+}
+
+footer {
+    font-family: 'MuseoSansRegular', sans-serif;
+    background: #45494d;
+    display: table;
+    width: 100%;
+    color: #d7dee4;
+    font-size: 0.56em;
+}
+footer ul{
+    width: 100%;
+}
+footer ul li{
+    width: 100%;
+    text-align: center;
+}
+
+.footer-top, .footer-bottom {
+    width: 100%;
+
+}
+.footer-top
+{
+
+
+}
+.footer-bottom {
+    padding: 15px 0;
+    border-top: 1px solid #5a5e62;;
+
+}
+.footer-top ul li,.links{
+    padding: 10px 0;
+}
+.links {
+   width: 140px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+.links a{display: inline-block;}
+footer ul li {
+    padding-top:10px ;
+    display: inline-block;
+}
+
+.footer-bottom {
+    float: right;
+    text-align: right;
+}
+
+@media screen and (min-width: 600px) {
+    .co-worker{padding: 65px 35px}
+    nav a {
+        width: 30%;
+        line-height: 80px;
+        border: none
+    }
+
+    nav {
+        width: 50%
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    nav a {
+        line-height: 80px;
+        border: none
+    }
+
+    nav{width: 40%}
+    footer .footer-top ul {
+        width: auto;
+        float: left;
+    }
+
+    footer ul li {
+        width: auto;
+        margin-right: 10px;
+    }
+
+    .links {
+        margin: 0;
+        float: right;
+    }
+
+    .footer-top ul li {
+        padding: 25px 0;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+
+    nav{width: 35%}
+
+    footer .footer-top  ul li {
+        width: auto;
+        margin-right: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+
+nav{width: 30%}
+    .mission h1{
+        display: table;
+        margin: 0 auto;
+    }
+    .mission h1:after{
+             content: " ";
+             text-align: center;
+             line-height: 42px;
+             background: url(../img/star.png) ;
+             display: block;
+             height: 15px;
+             width: 15px;
+             position: relative;
+             left: 248px;
+             bottom: 30px;
+         }
+
+    .mission h1:before{
+        content: " ";
+        text-align: center;
+        line-height: 42px;
+        background: url(../img/star.png) ;
+        display: block;
+        height: 15px;
+        width: 15px;
+        position: relative;
+        left: -25px;
+        top: 35px;
+    }
+
+}
+
+@media screen and (max-device-width: 480px) and (orientation: landscape), screen and (max-device-width: 1024px) and (orientation: landscape) {
+    .mission ,   .mission .container{
+        display: block;
+        height: 400px;}
+
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    .logo {
+
+        background-image: url("../img/in.png");
+
+    }
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 3),
+only screen and (min--moz-device-pixel-ratio: 3),
+only screen and (-o-min-device-pixel-ratio: 3/1),
+only screen and (min-device-pixel-ratio: 3),
+only screen and (min-resolution: 3dppx) {
+    .logo {
+
+        background-image: url("../img/inst.png");
+
+    }
+}
